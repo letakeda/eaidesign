@@ -1,0 +1,55 @@
+.input_h1 {
+    border: 0;
+    outline: 0;
+    font-size: 36px;
+    background: transparent;
+    border-bottom: 1px solid darkblue;
+    width: 600px;
+}
+
+.input_h2 {
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+    background: transparent;
+    border-bottom: 1px solid darkblue;
+    width: 100%;
+}
+
+table {
+	margin-left: 10px;
+}
+
+th {
+	background-color: #337ab7;
+	color: white;
+}
+
+.index {
+	margin-top: 250px;
+}
+
+#logo {
+	width: 40px;
+	height: 40px;
+}
+
+#subtopic {
+	margin-left: 10px;
+}
+
+::-webkit-input-placeholder {
+   color: #e6e6e6;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #e6e6e6;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #e6e6e6;  
+}
+
+:-ms-input-placeholder {  
+   color: #e6e6e6;  
+}

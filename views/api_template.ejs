@@ -1,0 +1,262 @@
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>EAI Design</title>
+
+<link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+<link rel="stylesheet" href="/stylesheets/custom.css">
+
+</head>
+
+<body>
+	
+<div class="container">
+	
+	<div class="row">
+		<h2>EAI Component Design Especification	</h2>
+		<input class="input_h1" type="text" name="api_name" placeholder="API name">
+		<input class="input_h1" type="text" name="author" placeholder="Author">
+	</div>
+
+	<div class="row">
+		<h3>1. Overview</h3>		
+
+		<div class="row" id="subtopic">
+			<h4>1.1 Purpose</h4>
+			<textarea class="input_h2" name="purpose" placeholder="Purpose"></textarea>
+			
+			<h4>1.2 Audience for this document</h4>
+			<p>The primary audience for this document is the EAI internal teams that are responsible for building, testing and supporting the service broker and ESB components for this API.</p>			
+		
+			<h4>1.3 Related documents</h4>
+			<div class="row" id="subtopic">
+
+				<h4>1.3.1 Link to API Interface document</h4>
+				<table class="table table-bordered">
+					<tr>
+						<td>
+							Draft 	
+						</td>
+						<td>
+							<a href="https://doc-share.corp.sprint.com/livelink/llisapi.dll?func=ll&objId=80107818&objAction=browse&viewType=1">https://doc-share.corp.sprint.com/livelink/llisapi.dll?func=ll&objId=80107818&objAction=browse&viewType=1</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Production	
+						</td>
+						<td>
+							<a href="https://doc-share.corp.sprint.com/livelink/llisapi.dll?func=ll&objId=39172438&objAction=browse&viewType=1">https://doc-share.corp.sprint.com/livelink/llisapi.dll?func=ll&objId=39172438&objAction=browse&viewType=1</a>
+						</td>
+					</tr>
+				</table>
+				
+				<h4>1.3.2 Link to XSDs / WSDLs</h4>
+				<table class="table table-bordered">
+					<tr>
+						<td>
+							Draft 	
+						</td>
+						<td>
+							<a href="https://doc-share.corp.sprint.com/livelink/llisapi.dll?func=ll&objId=80096933&objAction=browse&viewType=1">https://doc-share.corp.sprint.com/livelink/llisapi.dll?func=ll&objId=80096933&objAction=browse&viewType=1</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Production	
+						</td>
+						<td>
+							<a href="https://doc-share.corp.sprint.com/livelink/llisapi.dll?func=ll&objId=39172438&objAction=browse&viewType=1">https://doc-share.corp.sprint.com/livelink/llisapi.dll?func=ll&objId=39172438&objAction=browse&viewType=1</a>
+						</td>
+					</tr>
+				</table>
+				
+				<h4>1.3.3 EAI Web Service Design standards</h4>
+				<table class="table table-bordered">
+					<tr>
+						<td>
+							<a href="https://doc-share.corp.sprint.com/livelink/llisapi.dll?func=ll&objid=42214875&objaction=open">EAI Design Standards Folder</a>; see the following documents:<br>
+							<li>EAI Design Cookbook.docx</li>
+							<li>EAI Web Service User Guide.docx</li>
+							<a href="https://doc-share.corp.sprint.com/livelink/llisapi.dll?func=ll&objId=46980812&objAction=browse&viewType=1">EAI Security Folder</a>
+						</td>
+					</tr>
+				</table>
+				
+				<h4>1.3.4 Amdocs DFS</h4>
+				<table class="table table-bordered">
+					<tr>
+						<td>
+							Production	
+						</td>
+						<td>
+							<a href="https://doc-share.corp.sprint.com/livelink/llisapi.dll?func=ll&objId=8343118&objAction=browse&viewType=1">Production DFS Folder; EAI copies</a>
+						</td>
+					</tr>
+				</table>
+				
+				<h4>1.3.5 Amdocs IA</h4>
+				<label class="btn btn-primary">Browse&hellip; <input type="file" style="display: none;"></label>
+				
+				<h4>1.3.6 Other documents</h4>
+				<label class="btn btn-primary">Browse&hellip; <input type="file" style="display: none;"></label>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">		
+		<h3>2. System process flow</h3>
+		<textarea class="input_h2" name="system_process_flow_description" placeholder="System process flow description"></textarea>
+		<br>
+		<br>
+		<label class="btn btn-primary">Browse&hellip; <input type="file" style="display: none;"></label>
+	</div>
+	
+	<div class="row">			
+
+		<h3>3. ESB Business Logic – 76S</h3>			
+		<div class="row" id="subtopic">
+
+			<h4>3.1 Security</h4>
+			<table class="table table-bordered">
+				<tr>
+					<td>Service name:</td>
+					<td><input class="input_h2" type="text" name="service_name" placeholder="Service name"></td>
+				</tr>
+				<tr>
+					<td>Operation name:</td>
+					<td><input class="input_h2" type="text" name="operation_name" placeholder="Operation name"></td>
+				</tr>
+			</table>		
+
+			<h4>3.2 Security</h4>
+			<textarea class="input_h2" name="operation_name" placeholder="N/A"></textarea>
+
+			<h4>3.3 Data Source/Backend</h4>
+			<textarea class="input_h2" name="operation_name" placeholder="This section details the target system for data retrieval for the different sub methods"></textarea>		
+
+			<div class="row" id="subtopic">
+				<h4>3.3.1 Backend MQ/JMS API/BT</h4>
+				<table class="table table-bordered">
+					<th>Property</th>
+					<th>Value</th>
+					<tr>
+						<td>Backend API</td>
+						<td><input class="input_h2" type="text" name="bmq_backend_api" placeholder="MQ Backend API"></td>
+					</tr>
+					<tr>
+						<td>Type:</td>
+						<td><input class="input_h2" type="text" name="bmq_type" placeholder="MQ"></td>
+					</tr>
+					<tr>
+						<td>Message format:</td>
+						<td><input class="input_h2" type="text" name="bmq_message_format" placeholder="XML"></td>
+					</tr>
+					<tr>
+						<td>Request queue:</td>
+						<td><input class="input_h2" type="text" name="bmq_request_queue" placeholder="<queue name>"></td>
+					</tr>
+					<tr>
+						<td>Request CCSID:</td>
+						<td><input class="input_h2" type="text" name="bmq_request_ccsid" placeholder="(1208) or per backend specification"></td>
+					</tr>
+					<tr>
+						<td>Request Expiry:</td>
+						<td><input class="input_h2" type="text" name="bmq_request_expiry" placeholder="30"></td>
+					</tr>
+					<tr>
+						<td>Request Persistence:</td>
+						<td><input class="input_h2" type="text" name="bmq_request_persistence" placeholder="No"></td>
+					</tr>
+					<tr>
+						<td>Reply Queue:</td>
+						<td><input class="input_h2" type="text" name="bmq_reply_queue" placeholder="Generic reply queue"></td>
+					</tr>
+					<tr>
+						<td>Reply Timeout:</td>
+						<td><input class="input_h2" type="text" name="bmq_reply_timeout" placeholder="30"></td>
+					</tr>
+					<tr>
+						<td>Reply CCSID:</td>
+						<td><input class="input_h2" type="text" name="bmq_reply_ccsid" placeholder="desired encoding (1208)or per backend specification"></td>
+					</tr>
+				</table>
+
+				<h4>3.3.2 Backend SOAP/HTTP API</h4>
+				<table class="table table-bordered">
+					<th>Property</th>
+					<th>Value</th>
+					<tr>
+						<td>Backend API</td>
+						<td><input class="input_h2" type="text" name="bs_backend_api" placeholder="SOAP Backend API"></td>
+					</tr>
+					<tr>
+						<td>Message format:</td>
+						<td><input class="input_h2" type="text" name="bs_message_format" placeholder="SOAP"></td>
+					</tr>
+					<tr>
+						<td>URL:</td>
+						<td><input class="input_h2" type="text" name="bs_url" placeholder="URL"></td>
+					</tr>
+					<tr>
+						<td>Connect Timeout:</td>
+						<td><input class="input_h2" type="text" name="bs_connect_timeout" placeholder="30"></td>
+					</tr>
+					<tr>
+						<td>Read Timeout:</td>
+						<td><input class="input_h2" type="text" name="bs_read_timeout" placeholder="30"></td>
+					</tr>
+					<tr>
+						<td>HTTP Protocol Version:</td>
+						<td><input class="input_h2" type="text" name="bs_http_protocol_version" placeholder="1.1"></td>
+					</tr>
+					<tr>
+						<td>Chunked Allowed:</td>
+						<td><input class="input_h2" type="text" name="bs_chuncked_allowed" placeholder="yes"></td>
+					</tr>
+					<tr>
+						<td>SSL:</td>
+						<td><input class="input_h2" type="text" name="bs_ssl" placeholder="no"></td>
+					</tr>
+					<tr>
+						<td>Additional Security:</td>
+						<td><input class="input_h2" type="text" name="bs_additional_security" placeholder="no"></td>
+					</tr>
+				</table>
+
+			</div>
+
+			<h4>3.4	Backend Mapping</h4>
+				<div class="row" id="subtopic">
+					<h4>3.4.1 Mapping to backend</h4>
+					<label class="btn btn-primary">Browse&hellip; <input type="file" style="display: none;"></label>
+					<br><br>
+				</div>
+
+			<h4>3.5 Errors conditions</h4>
+			<textarea class="input_h2" name="errors_conditions" placeholder="Errors conditions"></textarea>		
+
+		</div>
+
+	</div>
+	
+	<br><br><br>
+
+	<div class="row">
+		<form action="" method="POST">
+			<button class="btn btn-primary" type="button">Save</button>		
+		</form>
+	</div>
+
+	<div class="row">&nbsp;</div>
+
+</div>
+
+</body>
+
+</html>
